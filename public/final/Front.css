@@ -1,0 +1,224 @@
+/* Front.css */
+
+.profile-image-container {
+    position: relative;
+}
+
+.profile-image-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+
+.profile-image-container:hover .profile-image-overlay {
+    opacity: 1;
+}
+
+#profile-image {
+    display: none;
+}
+
+.profile-image-container img {
+    border-radius: 50%;
+    max-width: 150px;
+    margin: auto;
+    display: block;
+}
+
+.notification-icon {
+    position: relative;
+    display: inline-block;
+}
+
+.notification-count {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background: #FF0000;
+    color: #FFFFFF;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #FFFFFF;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.dropdown-menu a {
+    color: #000000;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f1f1f1;
+}
+
+.sidebar {
+    margin-top: 100px;
+    width: 400px;
+}
+
+.separator {
+    height: 1px;
+    background-color: #555;
+    margin: 10px 0;
+}
+
+ a.logo-link {
+all: unset;
+/* إزالة جميع التنسيقات */
+display: inline;
+/* يمكنك تعديل هذا حسب الحاجة */
+cursor: default;
+    /* تغيير مؤشر الفأرة */
+}
+   a.logo-link:hover {
+    background-color: #ffffff;
+        color: #FFFFFF;
+    }
+
+
+
+
+a {
+    color: white;
+    background-color: rgb(29, 155, 240);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+
+}
+
+
+
+a:hover {
+    background-color: #626878;
+    color: #FFFFFF;
+}
+
+
+.main-content {
+    margin-top: 4rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    height: calc(100vh - 4rem);
+    overflow-y: auto;
+}
+
+.custom-logo {
+    width: 50px;
+    /* يمكنك تعديل القيمة حسب احتياجك */
+    height: 40px;
+}
+
+.img-profil {
+    width: 6rem;
+    /* 24 * 0.25rem */
+    height: 7rem;
+    /* 28 * 0.25rem */
+    border-radius: 50%;
+    /* يجعل الصورة دائرية */
+    margin-left: auto;
+    /* يجعل العنصر يتمركز أفقياً */
+    margin-right: auto;
+    /* يجعل العنصر يتمركز أفقياً */
+    margin-top: auto;
+    /* يجعل العنصر يتمركز عمودياً */
+    margin-bottom: auto;
+    /* يجعل العنصر يتمركز عمودياً */
+}
+
+.profile-image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    cursor: pointer;
+}
+
+.profile-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #ddd;
+    background-size: cover;
+    background-position: center;
+}
+
+.profile-image-overlay {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(205, 15, 15, 0.815);
+    color: #fff;
+    text-align: center;
+    padding: 8px 0;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+/* تعديل الشريط الجانبي */
+.sidebar {
+    margin-top: 100px;
+    width: 300px;
+    /* تعديل العرض إلى 300px */
+    padding: 1rem;
+    /* إضافة padding */
+}
+
+/* تعديل العنوان في الشريط الجانبي */
+.sidebar h2 {
+    color: black;
+    /* تغيير لون النص إلى الأسود */
+    margin-bottom: 1rem;
+    /* إضافة margin أسفل العنوان */
+    text-align: center;
+    /* توسيط النص */
+}
+
+/* تعديل الروابط في الشريط الجانبي */
+.sidebar a {
+    display: block;
+    padding: 0.5rem 1rem;
+    /* تعديل padding */
+    margin-bottom: 1rem;
+    /* إضافة margin أسفل كل رابط */
+    border-radius: 5px;
+    /* تعديل الحدود الدائرية */
+    background-color: #1d9bf0;
+    /* لون الخلفية الأزرق */
+    color: white;
+    /* لون النص الأبيض */
+    text-align: center;
+    /* توسيط النص */
+}
+
+.sidebar a:hover {
+    background-color: #1565c0;
+    /* لون الخلفية عند التحويم */
+}
+
+
+

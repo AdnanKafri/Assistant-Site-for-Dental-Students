@@ -1,0 +1,185 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    direction: rtl;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.back-button {
+    color: #000000;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.card {
+    border: 1px solid #ddd;
+    background-color: #fff;
+    padding: 16px;
+    margin: 16px;
+    width: 300px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    border-radius: 8px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+.card.registered {
+    pointer-events: none;
+    opacity: 0.6;
+    background-color: #4caf50; /* خلفية خضراء للمسجل */
+}
+
+.card.not-registered {
+    background-color: #f44336; /* خلفية حمراء لغير المسجل */
+}
+
+.card.pending {
+    background-color: #ff9800; /* خلفية برتقالية للمعلق */
+}
+
+.card img {
+    width: 100%;
+    height: 200px; /* ارتفاع ثابت للصورة */
+    object-fit: cover; /* تغطية الصورة بالكامل داخل الإطار */
+    border-radius: 8px 8px 0 0; /* تدوير الزوايا لأعلى فقط */
+}
+
+.status {
+    background-color: #08f4fd;
+    border: 1px solid #08f4fd;
+    font-weight: 600;
+    padding: 5px 10px;
+    border-radius: 20px;
+    display: inline-block;
+    margin-top: 10px;
+    color: white;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.card.registered .status {
+    background-color: #4caf50;
+    border-color: #4caf50;
+}
+
+.card.not-registered .status {
+    background-color: #f44336;
+    border-color: #f44336;
+}
+
+.card.pending .status {
+    background-color: #ff9800;
+    border-color: #ff9800;
+}
+
+.status:hover {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: #fff;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+}
+
+.close {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.close:hover {
+    color: black;
+}
+
+input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+input[type="password"]:focus {
+    outline: none;
+    border-color: #4caf50;
+    box-shadow: 0 0 8px rgba(0, 128, 0, 0.3);
+}
+
+.button-container {
+    margin-top: 20px;
+}
+
+.button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #45a049;
+}
